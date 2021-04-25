@@ -20,7 +20,6 @@ for (var i = 0; i<6; i++){
   image2.setAttribute("src", deck[i]); // display the randomly generated cards on pressing pick cards//
 }
 }
-
 var pt1 = deck.reduce((a,b) => a + b,0);
 var result= document.querySelectorAll("pt1");
 result.innerHTML= pt1;
