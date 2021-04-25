@@ -24,10 +24,10 @@ var pt1 = deck.reduce((a,b) => a + b,0);
 var result= document.querySelectorAll("pt1");
 result.innerHTML= pt1;
 //If player 1 wins
-if (randomNumber1 > randomNumber2) {
+if (randomNumber1 > randomNumber2 & randomNumber1 < 25) {
   document.querySelector("h1").innerHTML = "🚩 Play 1 Wins!";
 }
-else if (randomNumber2 > randomNumber1) {
+else if (randomNumber2 > randomNumber1 & randomNumber2 < 25) {
   document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
 }
 else {
